@@ -336,7 +336,7 @@ footer {
 }
 
 /* Media Queries for all screen sizes */
-@media only screen and (min-width: 1200px) {
+@media only screen and (width >= 1200px) {
 	/* Styles for screens up to 1200px */
 	h2 {
 		font-size: 30px;
@@ -359,7 +359,7 @@ footer {
 }
 
 
-@media only screen and (max-width: 900px) {
+@media only screen and (width <= 900px) {
 	/* Styles for screens up to 900px */
 	header {
 		padding: 25px;
@@ -408,7 +408,7 @@ footer {
 	}
 }
 
-@media only screen and (max-width: 675px) {
+@media only screen and (width <= 675px) {
 	/* Styles for screens up to 675px */
 	header {
 		grid-template-areas:
@@ -505,7 +505,7 @@ footer {
 
 }
 
-@media only screen and (max-width: 570px) {
+@media only screen and (width <= 570px) {
 	/* Styles for screens up to 570px */
 	aside {
 		flex-flow: row-reverse wrap;
@@ -513,7 +513,7 @@ footer {
 }
 
 
-@media only screen and (max-width: 470px) {
+@media only screen and (width <= 470px) {
 	/* Styles for screens up to 470px */
 	header {
 		place-items: center;
