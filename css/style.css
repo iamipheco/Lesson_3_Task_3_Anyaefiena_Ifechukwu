@@ -286,7 +286,7 @@ h6 {
 }
 
 .right-column {
-	flex: 1;
+	flex: 1.4;
 	border: 10px solid lightblue;
 	padding: 30px;
 	background-color: azure;
