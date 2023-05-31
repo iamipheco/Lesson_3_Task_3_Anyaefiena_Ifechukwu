@@ -1,16 +1,84 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -18,26 +86,34 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
 
-body {
-	line-height: 1;
-	width: 100%;
-}
-
-ol, ul {
+ol,
+ul {
 	list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
 	quotes: none;
 }
 
-blockquote::before, blockquote::after,
-q::before, q::after {
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
 	content: '';
 	content: none;
 }
@@ -52,5 +128,470 @@ table {
 
 /* Write your css below here */
 
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
 
-  
+body {
+	background-color: lightblue;
+	line-height: 1.4;
+}
+
+p {
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 15px;
+	letter-spacing: 0.2px;
+	line-height: 1.8;
+}
+
+header {
+	background-color: navy;
+	position: sticky;
+	top: 0;
+	z-index: 10;
+	padding: 1rem;
+	display: grid;
+	grid-template-areas:
+		'logo-wrapper . nav-link nav-btn'
+}
+
+
+.logo-wrapper {
+	grid-area: logo-wrapper;
+	display: flex;
+	flex: 2;
+}
+
+.nav-links {
+	grid-area: nav-link;
+	display: flex;
+	padding: 10px;
+	justify-content: space-evenly;
+}
+
+aside a {
+	color: slateblue;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	text-decoration: none;
+	font-size: 13.5px;
+}
+
+.nav-links a {
+	color: white;
+	text-decoration: none;
+	margin-right: 3rem;
+}
+
+aside a:hover {
+	color: darkblue;
+}
+
+.nav-links a:hover {
+	color: darkkhaki;
+}
+
+div img.logo-header {
+	height: 50px;
+	width: 60px;
+}
+
+.nav-btn {
+	display: grid;
+	place-items: center;
+	grid-area: nav-btn;
+}
+
+.nav-btn button {
+	color: darkblue;
+	font-size: 12px;
+	font-weight: 600;
+	padding: .8rem 1rem;
+	border-radius: 25px;
+	border: none;
+}
+
+
+.nav-btn button:hover {
+	color: white;
+	background-color: blueviolet;
+}
+
+h1 {
+	color: white;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 25px;
+}
+
+h2 {
+	color: darkblue;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 35px;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+h3 {
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-size: 25px;
+	color: indigo;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+h4 {
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-size: 21px;
+	color: darkblue;
+	text-transform: uppercase;
+}
+
+h5 {
+	padding-bottom: 20px;
+	opacity: 0.7;
+}
+
+h6 {
+	font-family: cursive;
+	padding-bottom: 10px;
+	color: darkslateblue;
+}
+
+.img-art {
+	width: 100%;
+}
+
+.third-art-img img {
+	border: 20px;
+	opacity: 0.6;
+	height: 500px;
+}
+
+.art-head p {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 10px;
+	color: darkslategrey;
+	text-transform: uppercase;
+}
+
+.main-content {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.left-column {
+	flex: 3;
+	padding: 30px 80px;
+}
+
+.right-column {
+	flex: 1.4;
+	border: 10px solid lightblue;
+	padding: 30px;
+	background-color: azure;
+}
+
+article {
+	padding: .1px .1px 30px;
+}
+
+
+.aside-repost {
+	padding-bottom: 30px;
+}
+
+.aside-cat {
+	padding-bottom: 30px;
+}
+
+.advert-img {
+	display: flex;
+	flex-direction: column;
+	opacity: 0.8;
+	padding-bottom: 20px;
+}
+
+.aside-container {
+	padding-left: 15px;
+}
+
+.advert-img1,
+.advert-img2,
+.advert-img3,
+.advert-img4 {
+	height: 300px;
+	width: 100%;
+	border-radius: 5px;
+}
+
+
+
+footer {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: darkblue;
+	background-color: cornflowerblue;
+	text-align: center;
+	padding: 20px;
+}
+
+/* Media Queries for all screen sizes */
+@media only screen and (width >= 1200px) {
+	/* Styles for screens up to 1200px */
+	h2 {
+		font-size: 30px;
+	}
+
+	.img-art {
+		height: 550px;
+	}
+
+	.advert-img1,
+	.advert-img2,
+	.advert-img3,
+	.advert-img4 {
+		height: 250px;
+	}
+
+	.advert-container {
+		padding: 20px;
+	}
+}
+
+
+@media only screen and (width <= 900px) {
+	/* Styles for screens up to 900px */
+	header {
+		padding: 25px;
+		grid-template-areas:
+			'logo-wrapper logo-wrapper nav-btn'
+			'nav-link nav-link nav-link'
+		;
+	}
+
+	h2 {
+		font-size: 29px;
+	}
+
+	.nav-links {
+		display: none;
+	}
+
+	.nav-links a {
+		margin-right: 10px;
+	}
+
+	.main-content {
+		flex-flow: column wrap;
+	}
+
+	.img-art {
+		height: 450px;
+	}
+
+
+	aside {
+		display: flex;
+		flex-direction: row-reverse;
+	}
+
+	.advert-container {
+		background-color: whitesmoke;
+		flex: 1.5;
+		padding: 20px;
+		opacity: 0.7;
+	}
+
+	.aside-container {
+		flex: 1;
+		padding-left: 35px;
+	}
+}
+
+@media only screen and (width <= 675px) {
+	/* Styles for screens up to 675px */
+	header {
+		grid-template-areas:
+			'logo-wrapper logo-wrapper logo-wrapper nav-btn'
+		;
+	}
+
+	h1 {
+		font-size: 22px;
+		padding-top: 5px;
+	}
+
+	h2 {
+		font-size: 20px;
+	}
+
+	h3 {
+		font-size: 16px;
+		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	}
+
+	h4 {
+		font-size: 20px;
+	}
+
+
+	p {
+		font-size: 14px;
+		letter-spacing: 0.1;
+	}
+
+	ul a {
+		color: cadetblue;
+		font-family: Georgia, 'Times New Roman', Times, serif;
+		font-size: 13px;
+	}
+
+	.img-art,
+	.third-art-img img {
+		height: 300px;
+	}
+
+	.art-head p {
+		font-size: 6px;
+	}
+
+	.nav-links {
+		display: none;
+	}
+
+	.nav-btns {
+		width: 60px;
+		height: 30px;
+		font-size: 10px;
+	}
+
+	.main-content {
+		flex-flow: column wrap;
+	}
+
+	.left-column {
+		padding: 30px;
+	}
+
+	.right-column {
+		padding: 30px;
+	}
+
+
+	aside {
+		display: flex;
+	}
+
+	.advert-container {
+		background-color: whitesmoke;
+		justify-content: center;
+		padding: 20px;
+		flex: 1.3;
+		opacity: 0.7;
+	}
+
+	.advert-container img {
+		height: 200px;
+	}
+
+	.aside-container {
+		flex: 1;
+	}
+
+	footer {
+		font-size: 12px;
+		padding: 30px;
+	}
+
+}
+
+@media only screen and (width <= 570px) {
+	/* Styles for screens up to 570px */
+	aside {
+		flex-flow: row-reverse wrap;
+	}
+}
+
+
+@media only screen and (width <= 470px) {
+	/* Styles for screens up to 470px */
+	header {
+		place-items: center;
+		grid-template-areas:
+			'logo-wrapper logo-wrapper logo-wrapper'
+		;
+	}
+
+	h1 {
+		font-size: 18px;
+		padding-top: 10px;
+	}
+
+	h2 {
+		font-size: 20px;
+	}
+
+	h3 {
+		font-size: 16px;
+		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	}
+
+	h4 {
+		color: blueviolet;
+		font-size: 17px;
+	}
+
+	p {
+		font-size: 14px;
+		letter-spacing: 0.1px;
+	}
+
+	ul a {
+		color: cadetblue;
+		font-family: Georgia, 'Times New Roman', Times, serif;
+		font-size: 12px;
+	}
+
+	.img-art,
+	.third-art-img img {
+		height: 250px;
+	}
+
+	.art-head p {
+		font-size: 6px;
+	}
+
+	.nav-links {
+		display: none;
+	}
+
+	.nav-btn button {
+		display: none;
+	}
+
+	.main-content {
+		flex-flow: column wrap;
+	}
+
+	.left-column {
+		padding: 30px;
+	}
+
+	.right-column {
+		padding: 30px;
+	}
+
+	.advert-container img {
+		height: 190px;
+	}
+
+	aside {
+		flex-flow: column wrap;
+	}
+
+	footer {
+		font-size: 12px;
+		padding: 30px;
+	}
+
+}
